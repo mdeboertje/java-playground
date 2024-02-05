@@ -17,7 +17,6 @@ public class Main {
         Loops loops = new Loops();
         String[] autos = new String[10];
         String[] prices = new String[10];
-        Scanner scan = new Scanner(System.in);
 
         prices[0] = "100";
         prices[1] = "200";
