@@ -1,4 +1,4 @@
-package nl.opdrachten.cilinderInhoud;
+package nl.opdrachten.week_1.cilinderInhoud;
 
 import java.util.Scanner;
 

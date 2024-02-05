@@ -1,4 +1,4 @@
-package nl.playground.objectOrientated;
+package nl.playground.objectOrientated.carExample;
 
 public class Car {
     private String modelName;

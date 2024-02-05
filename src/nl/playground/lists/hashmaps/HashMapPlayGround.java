@@ -1,4 +1,4 @@
-package nl.playground.hashmaps;
+package nl.playground.lists.hashmaps;
 
 import java.util.ArrayList;
 import java.util.HashMap;

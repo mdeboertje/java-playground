@@ -1,14 +1,11 @@
 package nl;
 
-import nl.opdrachten.betaalOverzichtGenerator.BetaalOverzichtGenerator;
-import nl.opdrachten.cilinderInhoud.CilinderInhoud;
-import nl.playground.arrays.ArrayPlayground;
-import nl.playground.hashmaps.HashMapPlayGround;
-import nl.playground.objectOrientated.Car;
+import nl.opdrachten.week_1.cilinderInhoud.CilinderInhoud;
+import nl.playground.lists.arrays.ArrayPlayground;
+import nl.playground.lists.hashmaps.HashMapPlayGround;
+import nl.playground.loops.Loops;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -53,6 +50,9 @@ public class Main {
 //        betaalOverzichtGenerator.Betaaloverzicht();
         CilinderInhoud cilinderInhoud = new CilinderInhoud();
         cilinderInhoud.CalculateCilinder();
+        Loops loops = new Loops();
+        loops.loopThroughArray();
+        loops.loopThrough2DArray();
 
 
 

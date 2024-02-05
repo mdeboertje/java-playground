@@ -1,4 +1,4 @@
-package nl.opdrachten.betaalOverzichtGenerator;
+package nl.opdrachten.week_1.betaalOverzichtGenerator;
 
 import java.util.Scanner;
 

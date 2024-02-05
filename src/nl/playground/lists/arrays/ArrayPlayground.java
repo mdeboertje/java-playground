@@ -1,8 +1,7 @@
-package nl.playground.arrays;
+package nl.playground.lists.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class ArrayPlayground {
     // Een standaard array die wordt gelooped doormiddel van een for loop
