@@ -13,6 +13,8 @@ public class Main {
     public static void main(String[] args) {
         ArrayPlayground arrayPlayground = new ArrayPlayground();
         HashMapPlayGround hashMapPlayGround = new HashMapPlayGround();
+        CilinderInhoud cilinderInhoud = new CilinderInhoud();
+        Loops loops = new Loops();
         String[] autos = new String[10];
         String[] prices = new String[10];
         Scanner scan = new Scanner(System.in);
@@ -41,19 +43,16 @@ public class Main {
         autos[9] = "Toyota";
 
 
+//      arrayPlayground.standardArray(autos);
+        HashMap<String, ArrayList<String[]>> resultaat = hashMapPlayGround.arrayToHashMapWithMultipleVal(autos, "Auto");
 
-//        arrayPlayground.standardArray(autos);
-        HashMap<String, ArrayList<String[]>> resultaat =  hashMapPlayGround.arrayToHashMapWithMultipleVal(autos, "Auto");
+//      BetaalOverzichtGenerator betaalOverzichtGenerator = new BetaalOverzichtGenerator();
 
-//        BetaalOverzichtGenerator betaalOverzichtGenerator = new BetaalOverzichtGenerator();
-
-//        betaalOverzichtGenerator.Betaaloverzicht();
-        CilinderInhoud cilinderInhoud = new CilinderInhoud();
+//      betaalOverzichtGenerator.Betaaloverzicht();
         cilinderInhoud.CalculateCilinder();
-        Loops loops = new Loops();
+
         loops.loopThroughArray();
         loops.loopThrough2DArray();
-
 
 
     }
