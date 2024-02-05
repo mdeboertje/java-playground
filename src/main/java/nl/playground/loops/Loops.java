@@ -1,5 +1,7 @@
 package nl.playground.loops;
 
+import java.util.Arrays;
+
 public class Loops {
     //Simpele for loop
     public void looper() {
@@ -14,7 +16,7 @@ public class Loops {
         String[] arr = {"test", "test1", "test2", "test3", "test4"};
         //Simpele manier om door een array te loopen en de inhoud te tonen
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr);
+            System.out.println(Arrays.toString(arr));
         }
 
     }

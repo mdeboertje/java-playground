@@ -2,15 +2,17 @@ package nl;
 
 import nl.opdrachten.week_1.cilinderInhoud.CilinderInhoud;
 import nl.playground.lists.arrays.ArrayPlayground;
+import nl.playground.lists.hashmaps.HashMapBase64Encoder;
 import nl.playground.lists.hashmaps.HashMapPlayGround;
 import nl.playground.loops.Loops;
+import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JSONException {
+        HashMapBase64Encoder encoder = new HashMapBase64Encoder();
         ArrayPlayground arrayPlayground = new ArrayPlayground();
         HashMapPlayGround hashMapPlayGround = new HashMapPlayGround();
         CilinderInhoud cilinderInhoud = new CilinderInhoud();
@@ -41,17 +43,30 @@ public class Main {
         autos[8] = "Opel";
         autos[9] = "Toyota";
 
+ HashMap<String, String> myHashmap = new HashMap<>();
+        myHashmap.put("key1", "value1");
+        myHashmap.put("key2", "value2");
+
+        // Convert hashmap to Base64
+        String encodedData = encoder.hashmapToBase64(myHashmap);
+        System.out.println("Base64 encoded: " + encodedData);
+
+        // Convert Base64 back to hashmap
+        HashMap<String, String> decodedHashmap = encoder.base64ToHashmap(encodedData);
+        System.out.println("Decoded hashmap: " + decodedHashmap);
+
+
 
 //      arrayPlayground.standardArray(autos);
-        HashMap<String, ArrayList<String[]>> resultaat = hashMapPlayGround.arrayToHashMapWithMultipleVal(autos, "Auto");
+//        HashMap<String, ArrayList<String[]>> resultaat = hashMapPlayGround.arrayToHashMapWithMultipleVal(autos, "Auto");
 
 //      BetaalOverzichtGenerator betaalOverzichtGenerator = new BetaalOverzichtGenerator();
 
 //      betaalOverzichtGenerator.Betaaloverzicht();
-        cilinderInhoud.CalculateCilinder();
-
-        loops.loopThroughArray();
-        loops.loopThrough2DArray();
+//        cilinderInhoud.CalculateCilinder();
+//
+//        loops.loopThroughArray();
+//        loops.loopThrough2DArray();
 
 
     }
